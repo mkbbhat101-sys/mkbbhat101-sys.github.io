@@ -5,268 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manoj Bhat | Kashmir and Beyond</title>
     <style>
-        :root {
-            /* Sheer Chai Color Palette */
-            --chai-base: #f7f2eb;        /* Soft, creamy milky-tea base */
-            --chai-accent: #b0957a;      /* Warm spiced cinnamon/assam tea tone */
-            --chai-dark: #3a332d;        /* Deep roasted tea leaf color for text */
-            --chai-muted: #73695e;       /* Diluted chai tone for subheaders */
-            --chai-border: #ebdcd0;      /* Subtle border tone */
-            --max-width: 680px;          /* Optimized for perfect reading line-length */
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: "Georgia", "Times New Roman", serif;
-            /* Creates a sheer, luminous effect by overlaying a soft radial light on the chai base */
-            background: radial-gradient(circle at top, #faf7f2 0%, var(--chai-base) 100%);
-            color: var(--chai-dark);
-            line-height: 1.8;
-            padding: 4rem 2rem;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        header {
-            max-width: var(--max-width);
-            margin: 0 auto 6rem auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--chai-border);
-            padding-bottom: 2rem;
-        }
-
-        .logo {
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: -0.3px;
-            color: var(--chai-dark);
-        }
-
-        nav a {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            color: var(--chai-muted);
-            text-decoration: none;
-            margin-left: 1.8rem;
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-            transition: color 0.2s ease;
-        }
-
-        nav a:hover {
-            color: var(--chai-dark);
-        }
-
-        main {
-            max-width: var(--max-width);
-            margin: 0 auto;
-        }
-
-        .hero {
-            margin-bottom: 5rem;
-        }
-
-        .status-badge {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            display: inline-block;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--chai-accent);
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            font-weight: 400;
-            line-height: 1.2;
-            margin-bottom: 2.5rem;
-            letter-spacing: -0.5px;
-        }
-
-        .lead-text {
-            font-size: 1.35rem;
-            color: var(--chai-muted);
-            font-style: italic;
-            margin-bottom: 3rem;
-            line-height: 1.6;
-        }
-
-        .content-section {
-            margin-bottom: 5rem;
-        }
-
-        h2 {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-size: 0.9rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 1.5rem;
-            color: var(--chai-accent);
-        }
-
-        p {
-            margin-bottom: 1.8rem;
-            font-size: 1.15rem;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 2rem 0;
-        }
-
-        li {
-            font-size: 1.15rem;
-            position: relative;
-            padding-left: 2rem;
-            margin-bottom: 1.2rem;
-            color: var(--chai-dark);
-        }
-
-        li::before {
-            content: "◦";
-            position: absolute;
-            left: 0;
-            color: var(--chai-accent);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        .excerpt-note {
-            font-style: italic;
-            color: var(--chai-muted);
-            margin-top: 2rem;
-            font-size: 1.05rem;
-        }
-
-        .cta-box {
-            margin-top: 6rem;
-            text-align: center;
-            border-top: 1px solid var(--chai-border);
-            padding-top: 4rem;
-        }
-
-        .cta-link {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            display: inline-block;
-            color: var(--chai-dark);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border: 1px solid var(--chai-dark);
-            padding: 1rem 2.5rem;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-        }
-
-        .cta-link:hover {
-            background-color: var(--chai-dark);
-            color: #faf7f2;
-        }
-
-        footer {
-            max-width: var(--max-width);
-            margin: 8rem auto 2rem auto;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-size: 0.8rem;
-            letter-spacing: 0.5px;
-            color: var(--chai-muted);
-            display: flex;
-            justify-content: space-between;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 2rem 1rem;
-            }
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1.5rem;
-                margin-bottom: 4rem;
-            }
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 1rem;
-            }
-            nav a {
-                margin-left: 0;
-                margin-right: 1rem;
-            }
-            h1 {
-                font-size: 2.2rem;
-            }
-        }
+        body { font-family: 'Georgia', serif; line-height: 1.8; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fafafa; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #eee; margin-bottom: 40px; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #111; text-decoration: none; font-family: sans-serif; }
+        nav a { margin-left: 20px; color: #555; text-decoration: none; font-family: sans-serif; font-size: 0.95rem; }
+        nav a:hover { color: #000; }
+        .tagline { font-style: italic; color: #666; margin-bottom: 30px; font-size: 1.1rem; }
+        h1 { font-size: 2.5rem; color: #111; margin-bottom: 5px; }
+        .meta { font-family: sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-bottom: 20px; }
+        section { margin-bottom: 40px; }
+        .btn { display: inline-block; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px; font-family: sans-serif; font-weight: 500; margin-top: 15px; }
+        .btn:hover { background-color: #0056b3; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 40px 0; }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo">Manoj Bhat</div>
+        <a href="index.html" class="logo">Manoj Bhat</a>
         <nav>
             <a href="#about">About</a>
             <a href="#books">Books</a>
-            <a href="kashmir-and-beyond.html">Kashmir and Beyond</a>            
-            <a href="#writing">Writing</a>
-            <section id="writing">
-    <section id="writing">
-    <h3>Writing & Reflections</h3>
-    <p>Explore the chapters of a lifetime journey, from the serene orchards of Kashmir to reflections in retirement.</p>
-    <a href="writing.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">Read the Full Memoir Overview</a>
-</sectionr>
-    
-                      
-            <a href="#work">Work</a>
+            <a href="writing.html">Writing</a>
             <a href="#contact">Get in touch</a>
         </nav>
     </header>
 
     <main>
-        <article class="hero">
-            <span class="status-badge">Memoir • In Progress</span>
+        <section id="about">
+            <div class="meta">Memoir • In Progress</div>
             <h1>Kashmir and Beyond</h1>
-            <p class="lead-text">“Some stories deserve to be remembered—not because they are extraordinary, but because they are real.”</p>
+            <p class="tagline">“Some stories deserve to be remembered—not because they are extraordinary, but because they are real.”</p>
             
             <p>This memoir is a deeply personal account of family, memory, resilience, and the events that transformed ordinary lives. It draws on my experiences and memories, reflecting individual journeys within a shared history.</p>
             
-            <p>This work is not intended to revisit old divisions, but to preserve memories with honesty, dignity, and compassion.</p>
-        </article>
-
-        <section class="content-section">
-            <h2>What it’s about</h2>
-            <p>At its heart, this is a book about memory—what we choose to carry forward, and what it means to hold an experience with honesty rather than nostalgia or grievance. It is written from a personal vantage point, but reaches toward something larger than one life: a shared history, seen through individual eyes.</p>
+            <p>This work is not intended to revisit old divisions, but to preserve memories, traditions, and values that shaped a childhood in Kashmir before the displacement of 1990.</p>
         </section>
 
-        <section class="content-section">
-            <h2>Topics explored</h2>
-            <ul>
-                <li>Family, memory, and how experiences are carried across a lifetime</li>
-                <li>Resilience through change and hardship</li>
-                <li>Individual journeys set within a shared, lived history</li>
-                <li>Preserving memory with honesty, dignity, and compassion—without revisiting old divisions</li>
-            </ul>
-            <p class="excerpt-note">The manuscript is currently in progress. Selected excerpts will be shared here as it moves toward publication.</p>
-        </section>
+        <hr>
 
-        <div class="cta-box">
-            <a href="mailto:your-email@example.com" class="cta-link">Get in touch</a>
-        </div>
+        <section id="writing">
+            <h2>Writing & Reflections</h2>
+            <p>Explore the chapters of a lifetime journey—from the serene orchards of Kashmir and rebuilding life in Delhi, to professional service across India and a peaceful retirement in Bengaluru.</p>
+            <a href="writing.html" class="btn">Read the Full Memoir Overview</a>
+        </section>
     </main>
-
-    <footer>
-        <div>&copy; 2026 Manoj Bhat</div>
-        <div>All rights reserved.</div>
-    </footer>
 
 </body>
 </html>
