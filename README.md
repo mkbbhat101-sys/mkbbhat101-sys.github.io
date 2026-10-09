@@ -1,2 +1,2 @@
 # manojbhat.github.io
-Personal website and memoire
+Personal website of Manoj Bhat: memoir, books, and professional profile.
