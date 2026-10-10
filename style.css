@@ -82,7 +82,9 @@ footer a { color: #777; }
 /* Photographs */
 figure.photo { margin: 30px auto; max-width: 480px; text-align: center; }
 figure.photo img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
-figure.photo figcaption { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); margin-top: 10px; }
+figure.photo figcaption { font-size: 0.95rem; font-style: italic; line-height: 1.7; color: #555; margin-top: 14px; text-align: left; }
+figure.photo figcaption strong { font-style: normal; color: var(--heading); }
+figure.photo figcaption .source { display: block; margin-top: 8px; font-family: var(--sans); font-style: normal; font-size: 0.8rem; color: var(--muted); }
 
 /* Long-form reading pages (book introductions) */
 .reading { font-size: 1.05rem; }
