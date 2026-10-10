@@ -83,3 +83,9 @@ footer a { color: #777; }
 figure.photo { margin: 30px auto; max-width: 480px; text-align: center; }
 figure.photo img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12); }
 figure.photo figcaption { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); margin-top: 10px; }
+
+/* Long-form reading pages (book introductions) */
+.reading { font-size: 1.05rem; }
+.reading p { margin: 0 0 1.2em; }
+.reading .pull { font-style: italic; font-size: 1.3rem; color: var(--heading); text-align: center; margin: 1.6em 0; }
+.reading .note { font-style: italic; color: #666; border-left: 3px solid #ddd; padding-left: 15px; margin-bottom: 2em; }
