@@ -91,3 +91,13 @@ figure.photo figcaption .source { display: block; margin-top: 8px; font-family: 
 .reading p { margin: 0 0 1.2em; }
 .reading .pull { font-style: italic; font-size: 1.3rem; color: var(--heading); text-align: center; margin: 1.6em 0; }
 .reading .note { font-style: italic; color: #666; border-left: 3px solid #ddd; padding-left: 15px; margin-bottom: 2em; }
+
+/* Contents lists */
+.toc { background: #fff; border: 1px solid #eaeaea; border-radius: 6px; padding: 20px 24px; margin: 30px 0; }
+.toc h2 { margin-top: 0; }
+.toc .part { font-family: var(--sans); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin: 18px 0 4px; }
+.toc ul { list-style: none; padding-left: 0; margin: 0; }
+.toc li { margin-bottom: 6px; }
+.toc ol.passages { padding-left: 1.6em; columns: 2 260px; column-gap: 32px; }
+.toc ol.passages li { break-inside: avoid; margin-bottom: 4px; }
+.toc .toc-note { font-size: 0.9rem; font-style: italic; color: #666; margin-top: 14px; }
