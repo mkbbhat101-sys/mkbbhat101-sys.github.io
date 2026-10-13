@@ -1,2 +1,2 @@
-# mkbbhat101-sys.github.io
+# manojbhat-sys.github.io
 Personal website of Manoj Bhat: memoir, books, and professional profile.
